@@ -1,0 +1,54 @@
+/***** COLORS *****/
+// Raw Colors
+$blue: #150578;
+$blueDark: #0E0E52;
+$blueLight: #449DD1;
+$white: #ffffff;
+$black: #060624;
+//Applied Colors
+$primaryC: $blue;
+$secondaryC: $blueDark;
+$accentC: $blueLight;
+$bodyBackgroundC: $white;
+$textColor: $black;
+$lightShadowC: rgba($black, .2);
+$shadowC: rgba($black, .4);
+
+/***** CONTAINERS *****/
+$containerMax: 113.6rem;
+$containerMaxSmall: 53rem;
+
+/* BREAKPOINTS */
+$mobileMin: 383px;
+$tabletMin: 576px;
+$desktopMin: 768px;
+$largeMin: 1200px;
+
+//******  FONTS  ******//
+// FONTFAMILIES
+$titleFont: 'Merriweather', serif;
+$primaryFont: 'Work Sans', sans-serif;
+
+// FONTSIZES 
+//--- MOBILE
+$fontSize: 1.6rem;
+$smallSize: 1.4rem;
+$h1Size: 2.4rem;
+$h2Size: 2rem;
+$h3Size: 1.8rem;
+$h4Size: 1.6rem;
+//--- DESKTOP
+$fontSizeDesktop: $fontSize;
+$h1SizeDesktop: 3.2rem;
+$h2SizeDesktop: 2.4rem;
+$h3SizeDesktop: 2rem;
+$h4SizeDesktop: 1.8rem;
+
+/* CARD PROPERTIES */
+$cardShadow: 0 0 4px $shadowC;
+$cardRadius: .8rem;
+$smallRadius: .4rem;
+/***** TRANSITIONS *****/
+$transitionDuration: 200ms;
+$transitionEase: ease-in-out;
+$transitionAll: all $transitionDuration $transitionEase;

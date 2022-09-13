@@ -1,0 +1,48 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+}
+/* Global styles */
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: $primaryFont;
+  font-size: $fontSize;
+  color: $textColor;
+  background-color: $bodyBackgroundC;
+}
+a {
+  text-decoration: none;
+}
+/* HEADINGS */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  font-family: $titleFont;
+}
+h1 {
+  font-size: $h1Size;
+} 
+h2 {
+  font-size: $h2Size;
+}
+h3 {
+  font-size: $h3Size;
+}
+@include desktop {
+  h1 {
+    font-size: $h1SizeDesktop;
+  }
+  h2 {
+    font-size: $h2SizeDesktop;
+  }
+  h3 {
+    font-size: $h3SizeDesktop;
+  }
+}

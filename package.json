@@ -1,0 +1,29 @@
+{
+  "name": "wdd330readings",
+  "version": "1.0.0",
+  "description": "On this website I will be adding weekly updates for my readings and assignments about Web Development",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev",
+    "build-css": "node-sass --source-map-embed true --include-path scss sass/main.scss > css/styles.css",
+    "minify-css": "cleancss css/styles.css -o css/styles.min.css",
+    "build-styles": "npm run build-css & npm run minify-css",
+    "dev": "nodemon -e scss -x \"npm run build-styles\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagopintus/wdd330readings.git"
+  },
+  "dependencies": {
+    "clean-css-cli": "^5.6.1",
+    "node-sass": "^7.0.3",
+    "nodemon": "^2.0.19"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/santiagopintus/wdd330readings/issues"
+  },
+  "homepage": "https://github.com/santiagopintus/wdd330readings#readme"
+}
