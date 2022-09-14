@@ -1,0 +1,10 @@
+section.week-content {
+  h3.topic-title {
+    padding: .5rem;
+    border-bottom: $primaryBorder;
+  }
+  p.topic-body {
+    // margin: 0 auto;
+    max-width: 80rem;
+  }
+}

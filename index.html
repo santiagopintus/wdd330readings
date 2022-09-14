@@ -26,12 +26,12 @@
   <body>
     <header class="main-header">
       <div class="header-content container">
-        <h2 class="header-title">Readings</h2>
+        <a href="/" class="header-title">Readings</a>
         <nav class="navigation">
           <div class="week-nav-item-container" id="weekNavItemContainer">
-            <a class="week-nav-item" href="/" id="weekNavItem">All weeks</a>
+            <a class="week-nav-item" href="/" id="weekNavItem">All Weeks</a>
             <ul class="nav-weeks-list" id="navWeeksList">
-              <li><a href="pages/w01.html">Week 01</a></li>
+              <!-- Loaded with JS -->
             </ul>
           </div>
         </nav>
@@ -40,20 +40,11 @@
 
     <main class="weeks-section container">
       <h1>Weeks</h1>
-      <div class="weeks-container">
-        <a href="pages/w01.html" class="week-item">
-          <h1>W01</h1>
-        </a>
-        <a href="#" class="week-item">
-          <h1>W01</h1>
-        </a>
-        <a href="#" class="week-item">
-          <h1>W01</h1>
-        </a>
-        <a href="#" class="week-item">
-          <h1>W01</h1>
-        </a>
-      </div>
+      <ul class="weeks-container" id="linksList">
+        <!-- Loaded with JS -->
+      </ul>
     </main>
+
+    <script src="js/main.js" type="module"></script>
   </body>
 </html>

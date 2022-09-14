@@ -1,0 +1,52 @@
+.weeks-section {
+  .weeks-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 2.4rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    .week-item {
+      background-color: $primaryC;
+      padding: 3rem 1rem;
+
+      a {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        font-size: $h2Size;
+      }
+
+      &.disabled {
+        filter: grayscale(1) brightness(7) blur(1px);
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+
+@include desktop {
+.weeks-section {
+  .weeks-container {
+    display: grid;
+    gap: 2.4rem;
+
+    .week-item {
+      background-color: $primaryC;
+      
+      a {
+        width: 100%;
+        text-align: center;
+        color: $white;
+        font-size: $h2Size;
+      }
+
+      &.disabled {
+        filter: grayscale(1) brightness(7) blur(1px);
+        cursor: not-allowed;
+      }
+    }
+  }
+}
+}

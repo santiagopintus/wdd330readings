@@ -46,8 +46,12 @@ $h4SizeDesktop: 1.8rem;
 
 /* CARD PROPERTIES */
 $cardShadow: 0 0 4px $shadowC;
+
+/* BORDERS */
+$primaryBorder: 1px solid $primaryC;
 $cardRadius: .8rem;
 $smallRadius: .4rem;
+
 /***** TRANSITIONS *****/
 $transitionDuration: 200ms;
 $transitionEase: ease-in-out;
