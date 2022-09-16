@@ -3,8 +3,19 @@ section.week-content {
     padding: .5rem;
     border-bottom: $primaryBorder;
   }
-  p.topic-body {
+  .topic-body {
     // margin: 0 auto;
     max-width: 80rem;
+
+    pre, code {
+      color: $codeBlockColorC;
+      background-color: $codeBlockBgC;
+    }
+    pre {
+      width: fit-content;
+      padding: .5rem;
+      white-space: unset;
+      font-size: $h3Size;
+    }
   }
 }

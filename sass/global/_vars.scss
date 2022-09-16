@@ -3,6 +3,8 @@
 $blue: #150578;
 $blueDark: #0E0E52;
 $blueLight: #449DD1;
+$grayLight: #ececec;
+$lightOrange: #ffd68a;
 $white: #ffffff;
 $black: #060624;
 //Applied Colors
@@ -10,6 +12,8 @@ $primaryC: $blue;
 $secondaryC: $blueDark;
 $accentC: $blueLight;
 $bodyBackgroundC: $white;
+$codeBlockBgC: $black;
+$codeBlockColorC: $lightOrange;
 $textColor: $black;
 $lightShadowC: rgba($black, .2);
 $shadowC: rgba($black, .4);
