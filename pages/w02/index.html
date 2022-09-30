@@ -20,11 +20,12 @@
 
     <title>Week 2 - Readings</title>
   </head>
-  <body>
+  <body class="dark-mode">
     <!-- HEADER -->
     <header class="main-header">
       <div class="header-content container">
         <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher"><i id="switchIcon" class="moon"></i></button>
       </div>
     </header>
 
@@ -36,28 +37,60 @@
           <h2 class="article-title">Reading notes</h2>
           <h3 class="topic-title">Functions</h3>
           <div class="topic-body">
-            <p>Functions are a super important part of JavaScript. There are
-            several ways to declare functions and several ways to call them.
-            Functions can be declared using
-            <strong>function declaration</strong> method as a
-            <strong>named function:</strong></p>
+            <p>
+              Functions are a super important part of JavaScript. There are
+              several ways to declare functions and several ways to call them.
+              Functions can be declared using
+              <strong>function declaration</strong> method as a
+              <strong>named function:</strong>
+            </p>
             <pre>function sum(num1, num2){}</pre>
-            <strong>Anonymous function</strong> (assigned to a variable): <pre>const sum = function(num1, num2){}</pre>
+            <strong>Anonymous function</strong> (assigned to a variable):
+            <pre>const sum = function(num1, num2){}</pre>
             Also as an <strong>arrow function:</strong>
             <pre>const sum = (num1, num2) => {}</pre>
           </div>
           <h3 class="topic-title">Hoisting</h3>
           <div class="topic-body">
-            <p>Hoisting is a little tricky concept but as I understand Hoisting is the fact that JavaScript moves all variables and function declarations to the top of the current scope. The function can be called before its declaration, if declared as a function declaration. The <strong>declaration</strong> of variables declared with "var" keyword is moved to the top as well but it is not hoisted its value assignment, so it can be only used after it was assigned a value.</p>
+            <p>
+              Hoisting is a little tricky concept but as I understand Hoisting
+              is the fact that JavaScript moves all variables and function
+              declarations to the top of the current scope. The function can be
+              called before its declaration, if declared as a function
+              declaration. The <strong>declaration</strong> of variables
+              declared with "var" keyword is moved to the top as well but it is
+              not hoisted its value assignment, so it can be only used after it
+              was assigned a value.
+            </p>
           </div>
           <h3 class="topic-title">Utilities</h3>
           <div class="topic-body">
-            <p>Window: Window object has some useful methods like <code>prompt()</code>, <code>alert()</code>, <code>confirm()</code>. The <code>window.location</code> property will allow me to redirect the user to a new location. I did not know the <code>window.history</code> property with its method "go". It is very useful when locating the user. By using <code>window.resizeTo(width, height)</code>, I can resize the window!</p>
-            <p>"Cookies can be used to store small pieces of information between requests using the document.cookie property" I can set cookies with js.</p>
-            <p><code>&lt;template&gt;</code> element can use in js as a way to specify an HTML template that will not be rendered when DOMContentLoaded is triggered but is to be run during runtime.</p>
+            <p>
+              Window: Window object has some useful methods like
+              <code>prompt()</code>, <code>alert()</code>,
+              <code>confirm()</code>. The <code>window.location</code> property
+              will allow me to redirect the user to a new location. I did not
+              know the <code>window.history</code> property with its method
+              "go". It is very useful when locating the user. By using
+              <code>window.resizeTo(width, height)</code>, I can resize the
+              window!
+            </p>
+            <p>
+              "Cookies can be used to store small pieces of information between
+              requests using the document.cookie property" I can set cookies
+              with js.
+            </p>
+            <p>
+              <code>&lt;template&gt;</code> element can use in js as a way to
+              specify an HTML template that will not be rendered when
+              DOMContentLoaded is triggered but is to be run during runtime.
+            </p>
           </div>
         </article>
       </section>
     </main>
+
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
   </body>
 </html>

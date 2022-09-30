@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Content learned in a week of WDD330" />
+    <meta name="isWeekPage" content="1" />
+
+    <!-- FONTS IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Week 3 - Readings</title>
+  </head>
+  <body class="dark-mode">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content container">
+        <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher"><i id="switchIcon" class="moon"></i></button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1 class="week-title">Week 03</h1>
+      <section class="week-content">
+        <article class="article-item">
+          <h2 class="article-title">Reading notes</h2>
+          <h3 class="topic-title">"This" Keyword</h3>
+          <div class="topic-body">
+            <p>
+              In OOP or "Object Oriented Programming" objects are used to
+              represent entities of the real world. As real entities, objects
+              have properties and in many cases, the capacity to act. A
+              Javascript object performs an action through function properties
+              called methods. To access the data inside of an object, its method
+              should use the keyword this to refer to the object and then access
+              one of its properties. For instance:
+            </p>
+            <pre>
+let student = {
+  name: "Santiago",
+  lastName: "Pintus",
+  currentCourse: "WDD330",
+  study() {
+    console.log(`Currently studying ${this.currentCourse}`)
+  }
+}</pre
+            >
+          </div>
+        </article>
+      </section>
+      <section class="excercise">
+        <h2>Balloon Game</h2>
+        <div class="gameplay-screen">
+          <div class="balloon-container">
+            <span style="font-size: 16px; margin: 0" id="balloon">🎈</span>
+          </div>
+          <div class="arrows-container">
+            <div class="arrow-container">
+              <div class="arrow" id="arrowUp">
+                <span>↑</span>
+              </div>
+              <p>Inflate</p>
+            </div>
+            <div class="arrow-container">
+              <div class="arrow" id="arrowDown">
+                <span>↓</span>
+              </div>
+              <p>Deflate</p>
+            </div>
+            <div class="arrow-container">
+              <div class="arrow" id="rKey">
+                <span>R</span>
+              </div>
+              <p>Reset</p>
+            </div>
+          </div>
+          <p>
+            Press the arrow up to inflate the balloon and arrow down to deflate
+            it
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Balloon excercise scripts -->
+    <script src="balloon.js"></script>
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
+  </body>
+</html>

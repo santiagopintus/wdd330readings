@@ -1,11 +1,15 @@
 /* GLOBAL STYLES */
 @import 'global/vars';
+@import 'global/icons';
 @import 'global/utils';
 @import 'global/mixins';
 @import 'global/global';
 
+/* EXERCISES */
+@import 'layout/balloon';
 /* LAYOUT STYLES */
 @import 'layout/header';
 @import 'layout/home';
 @import 'layout/week';
+@import 'layout/theme-switch';
 @import 'layout/page-404';

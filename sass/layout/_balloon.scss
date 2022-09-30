@@ -1,0 +1,44 @@
+.excercise {
+  .gameplay-screen {
+    box-shadow: $cardShadow;
+    border-radius: $cardRadius;
+    padding: 1rem;
+    margin-bottom: 3rem;
+    @include flex-center-col;
+    gap: 1.6rem;
+
+    .balloon-container {
+      @include flex-center;
+      background-color: $blueLight;
+      width: 15rem;
+      height: 15rem;
+    }
+    .arrows-container {
+      @include flex-center;
+      color: $textColor;
+      gap: 2.4rem;
+    }
+    .arrow-container {
+      @include flex-center-col;
+
+      .arrow {
+        @include flex-center;
+        font-weight: bold;
+        background-color: #ebebeb;
+        border-radius: 2rem;
+        width: 5rem;
+        height: 5rem;
+        box-shadow: 2px 3px 6px $shadowC;
+        transition: $transitionAll;
+
+        &.pressed {
+          transform: translateY(2px);
+          box-shadow: 2px 3px 6px -2px $shadowC;
+        }
+        &.error {
+          background-color: #e29999;
+        }
+      }
+    }
+  }
+}

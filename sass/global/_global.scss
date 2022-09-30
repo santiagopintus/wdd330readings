@@ -46,3 +46,9 @@ h3 {
     font-size: $h3SizeDesktop;
   }
 }
+
+/* DARK MODE */
+body.dark-mode {
+  color: $textColorDark;
+  background-color: $bodyBackgroundCDark;
+}
