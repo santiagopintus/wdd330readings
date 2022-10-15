@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Content learned in week 2 of WDD330" />
+
+    <!-- FONTS IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Week 5 - Readings</title>
+  </head>
+  <body class="dark-mode">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content container">
+        <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher">
+          <i id="switchIcon" class="moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1 class="week-title">Week 05</h1>
+      <section class="week-content">
+        <article class="article-item">
+          <h2 class="article-title">Reading notes</h2>
+          <h3 class="topic-title">Errors and debugging</h3>
+          <div class="topic-body">
+            <h4>There are mainly 3 types of errors:</h4>
+            <ul>
+              <li>
+                System errors: when there's an issue related to devices or
+                external programs the actual program is interacting with.
+              </li>
+              <li>
+                Programmer errors: Errors performed by the author of the code,
+                faulty logic, or even a typo.
+              </li>
+              <li>
+                User error: When the user enters data incorrectly or when the
+                user performs an action that the program is not ready to handle.
+              </li>
+            </ul>
+            <h4>Why is it important to test and Debug?</h4>
+            <p>
+              JavaScript is very flexible when it comes to errors. Because of
+              this, occasionally, errors are difficult to spot. This can cause
+              errors to accumulate in our programs without even noticing them
+              generating a huge error at the end.
+            </p>
+            <p>
+              To handle this, programmers should look for errors all the time,
+              causing the program to show the errors in a noticeable way. One
+              way to achieve this is using the "strict mode" that causes some
+              bad practices or deprecated features as errors. To use "strict
+              mode" just include the 'use strict'; line at the beginning of the
+              js file or function.
+            </p>
+            <h4>Linting Tools</h4>
+            <p>
+              Linting tools are used to help write quality code following good
+              practices of ES6. They can help programmers follow a specific
+              style guide for the code such as using simple or double quotation
+              marks all over the code, following the same indentation always,
+              etc.
+            </p>
+            <h4>Feature Detection</h4>
+            <p>
+              Our programs can be run on different devices or browsers that
+              support different features. It is prudent to catch any feature
+              that is not supported in that specific device or browser and
+              handle it properly. For instance, wrap the code in a conditional
+              sentence:
+            </p>
+            <pre>
+if(module) {
+  module.method()
+}
+            </pre>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
+  </body>
+</html>
