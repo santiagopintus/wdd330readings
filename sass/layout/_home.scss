@@ -6,47 +6,41 @@
     list-style: none;
     padding: 0;
     margin: 0;
+  }
+}
+.weeks-section .week-item {
+  background-color: $primaryC;
+  padding: 3rem 1rem;
 
-    .week-item {
-      background-color: $primaryC;
-      padding: 3rem 1rem;
-
-      a {
-        width: 100%;
-        text-align: center;
-        color: $white;
-        font-size: $h2Size;
-      }
-
-      &.disabled {
-        filter: grayscale(1) brightness(7) blur(1px);
-        cursor: not-allowed;
-      }
-    }
+  a, p {
+    width: 100%;
+    text-align: center;
+    color: $white;
+    font-size: $h2Size;
   }
 }
 
 @include desktop {
-.weeks-section {
-  .weeks-container {
-    display: grid;
-    gap: 2.4rem;
+  .weeks-section {
+    .weeks-container {
+      display: grid;
+      gap: 2.4rem;
 
-    .week-item {
-      background-color: $primaryC;
-      
-      a {
-        width: 100%;
-        text-align: center;
-        color: $white;
-        font-size: $h2Size;
-      }
+      .week-item {
+        background-color: $primaryC;
 
-      &.disabled {
-        filter: grayscale(1) brightness(7) blur(1px);
-        cursor: not-allowed;
+        a {
+          width: 100%;
+          text-align: center;
+          color: $white;
+          font-size: $h2Size;
+        }
+
+        &.disabled {
+          filter: grayscale(1) brightness(7) blur(1px);
+          cursor: not-allowed;
+        }
       }
     }
   }
-}
 }

@@ -23,5 +23,10 @@ export const links = [
     label: "Week 05 notes",
     navLabel: "Week 05",
     url: "pages/w05",
-  }
+  },
+  {
+    label: "Todo app",
+    navLabel: "Todo app",
+    url: "https://santiagopintus.github.io/byui-todo-app/",
+  },
 ];
