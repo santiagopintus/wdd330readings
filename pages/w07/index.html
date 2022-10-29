@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Content learned in week 2 of WDD330" />
+
+    <!-- FONTS IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Week 7 - Readings</title>
+  </head>
+  <body class="dark-mode">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content container">
+        <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher">
+          <i id="switchIcon" class="moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1 class="week-title">Week 07</h1>
+      <section class="week-content">
+        <article class="article-item">
+          <h2 class="article-title">Reading notes</h2>
+          <h3 class="topic-title">AJAX</h3>
+          <div class="topic-body">
+            <p>
+              Asynchronous JavaScript and XML: This is the standard for fetching
+              data from a server and reloading only part of the page to update
+              the shown data. The fetch API is a way to execute these requests.
+              This is the basic structure:
+            </p>
+            <pre>
+fetch("https://urlexample.com")
+  .then(//Do something after receiving a response)
+  .catch(//Do something if there's an error on the fetch)
+  .finally(//Finally execute other code after the fetch ends)</pre
+            >
+            <p>There are different methods to perform various actions on an HTTP request. The methods are:</p>
+            <ul>
+              <li>GET: For retrieving data from the server.</li>
+              <li>POST: For sending data from the frontend to the server</li>
+              <li>PUT: Generally for updating data in the server</li>
+              <li>PATCH: For updating partially a resource</li>
+              <li>DELETE: For deleting a resource</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
+  </body>
+</html>
