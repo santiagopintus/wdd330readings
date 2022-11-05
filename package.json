@@ -16,8 +16,7 @@
   },
   "dependencies": {
     "clean-css-cli": "^5.6.1",
-    "node-sass": "^7.0.3",
-    "nodemon": "^2.0.19"
+    "node-sass": "^7.0.3"
   },
   "keywords": [],
   "author": "",

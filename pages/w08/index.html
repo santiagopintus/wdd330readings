@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Content learned in week 2 of WDD330" />
+
+    <!-- FONTS IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Week 8 - Readings</title>
+  </head>
+  <body class="dark-mode">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content container">
+        <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher">
+          <i id="switchIcon" class="moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1 class="week-title">Week 08</h1>
+      <section class="week-content">
+        <article class="article-item">
+          <h2 class="article-title">Reading notes</h2>
+          <h3 class="topic-title">CSS Transforms</h3>
+          <div class="topic-body">
+            <p>
+              The transform CSS property allows to modify an element in the
+              following ways:
+            </p>
+            <ul>
+              <li>Rotate</li>
+              <li>Scale</li>
+              <li>Skew</li>
+              <li>Translate</li>
+            </ul>
+
+            <p>
+              To rotate I must indicate the degrees to rotate the element as a
+              function parameter: <code>transform: rotate(45deg);</code>
+            </p>
+            <p>
+              To scale, I must indicate a value. A percent less than 100% or a
+              single number less than 1 will cause the element to shrink. If I
+              want to scale an element in the X and Y axes separately, I must
+              pass two values: <code>transform: scale(20%, 120%);</code>
+            </p>
+            <p>
+              Skew: It skews an element on the 2D plane. The first value will
+              skew on the x-axis and the second on the y-axis:
+              <code>transform: skew(15deg, 30deg);</code>
+            </p>
+            <p>
+              Translate: Moves an element on the 2D plane. The first value moves
+              the element on the x-axis, and the second on the y-axis. If only
+              one value is passed, then it moves on both axes:
+              <code>transform: translate(10px, 2px);</code>
+            </p>
+          </div>
+          <h3 class="topic-title">CSS Transitions</h3>
+          <div class="topic-body">
+            <p>
+              Transitions provide a way to control the speed of CSS animations
+              when properties are changed. By default changes occur immediately,
+              transitions make this change smooth for a nicer effect.
+            </p>
+            <p>Code example of transform + transition</p>
+            <pre>
+.square {
+  transition: background-color 200ms ease;
+}
+.square:hover {
+  background-color: #000000;
+}
+            </pre>
+            <p>Here, I added a transition to the background-color on the hover event.</p>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
+  </body>
+</html>
