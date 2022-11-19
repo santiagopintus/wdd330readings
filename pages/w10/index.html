@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- META -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Content learned in week 2 of WDD330" />
+
+    <!-- FONTS IMPORTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&family=Work+Sans:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- STYLES -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Week 10 - Readings</title>
+  </head>
+  <body class="dark-mode">
+    <!-- HEADER -->
+    <header class="main-header">
+      <div class="header-content container">
+        <a href="../../" class="header-title">Readings</a>
+        <button class="theme-switch" id="themeSwitcher">
+          <i id="switchIcon" class="moon"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+      <h1 class="week-title">Week 10</h1>
+      <section class="week-content">
+        <article class="article-item">
+          <h2 class="article-title">Reading notes</h2>
+          <h3 class="topic-title">Client-side form validation</h3>
+          <div class="topic-body">
+            <p>
+              Client-side form validation is when the client/browser validates a
+              form before sending it to the backend for validation. Validating
+              the user's input before sending it to the backend, we allow the
+              user to fix it right away instead of waiting and then getting an
+              error.
+            </p>
+            <p>
+              Client-side validation, though, should not be the only validation
+              since it is easy to bypass. The most exhaustive form validation
+              for user attacks should be on the server side.
+            </p>
+            <p>
+              These are a few examples of client-side form validation extracted
+              from MDN:
+            </p>
+            <ul>
+              <li>
+                "This field is required" (You can't leave this field blank).
+              </li>
+              <li>
+                "Please enter your phone number in the format xxx-xxxx" (A
+                specific data format is required for it to be considered valid).
+              </li>
+              <li>
+                "Please enter a valid email address" (the data you entered is
+                not in the right format).
+              </li>
+              <li>
+                "Your password needs to be between 8 and 30 characters long and
+                contain one uppercase letter, one symbol, and a number." (A very
+                specific data format is required for your data).
+              </li>
+            </ul>
+          </div>
+        </article>
+        <h3 class="topic-title">Fetch API</h3>
+        <div class="topic-body">
+          <p>The Fetch API provides a JavaScript interface for accessing and manipulating requests and responses. It also provides a global fetch() method that provides an easy way to get resources asynchronously across the network.</p>
+          <p>Example of basic request:</p>
+          <pre>
+fetch('http://example.com/movies.json')
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+          </pre>
+        </div>
+      </section>
+    </main>
+
+    <!-- DARK MODE SCRIPTS -->
+    <script src="../../js/darkMode.js"></script>
+  </body>
+</html>

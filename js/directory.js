@@ -44,4 +44,9 @@ export const links = [
     navLabel: "Week 09",
     url: "pages/w09",
   },
+  {
+    label: "Week 10 notes",
+    navLabel: "Week 10",
+    url: "pages/w10",
+  },
 ];
