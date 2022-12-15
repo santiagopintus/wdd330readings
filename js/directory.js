@@ -49,4 +49,9 @@ export const links = [
     navLabel: "Week 10",
     url: "pages/w10",
   },
+  {
+    label: "Week 14: Star Wiki",
+    navLabel: "Star Wiki",
+    url: "https://santiagopintus.github.io/StarWiki/",
+  },
 ];

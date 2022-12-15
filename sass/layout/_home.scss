@@ -29,6 +29,9 @@
       .week-item {
         background-color: $primaryC;
 
+        &:hover {
+          filter: brightness(1);
+        }
         a {
           width: 100%;
           text-align: center;
